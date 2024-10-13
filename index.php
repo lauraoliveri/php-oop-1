@@ -1,5 +1,5 @@
 <?php 
-require __DIR__.'Movies.php';
+require __DIR__ .'\movies.php';
 
 ?>
 
@@ -14,6 +14,15 @@ require __DIR__.'Movies.php';
 </head>
 <body>
     
+
+    <!-- stampo i film -->
+
+    <div>
+       <?php
+
+       echo $TheNun->getFullData();
+       ?> 
+    </div>
 </body>
 </html>
 

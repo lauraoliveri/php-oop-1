@@ -22,10 +22,18 @@ class Movie {
         $this->age = $age;
         $this -> duration = $duration;
     }
+
+    // metodo per stampare in html
+
+    public function getFullData(){
+        return 'Title:'. $this->title. 'Genre:' .$this->genre. 'Director:'. $this->director. 'Genre:'. $this->genre. 'Duration:' .$this->duration . 'Age required:' . $this->age;
+    }
 }
 
 // creo i nuovi oggetti
 $TheNun = new Movie('The Nun', 'Horror', 'Pinco Pallino', '120 min', '13');
 $TheConjuring = new Movie('The Conjuring', 'Horror', 'Pinco Pallino', '120 min', '13');
+
+
 
 ?>
